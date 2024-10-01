@@ -1,0 +1,153 @@
+tuple
+it is an oredered collection of elements using () and it is not mutuable
+t = ()
+type(t)
+tuple
+e = (1,2,3,4,5,"string",True)
+e
+(1, 2, 3, 4, 5, 'string', True)
+# count the given element
+e.count(5)
+1
+# print the index of the given element
+e.index("string")
+5
+list and tuple
+[] ()
+mutuable immutuable
+ 
+set
+it is an unoredered collection of unique elements
+it does not contain any duplicate element there is no indexing and slicing in the set
+
+ s = set()
+type(s)
+set
+s = {4,8,9,9,6,3,5,10}
+s
+{3, 4, 5, 6, 8, 9, 10}
+# in set pop will remove a random an element 
+s.pop()
+3
+s
+{4, 5, 6, 8, 9, 10}
+q1 = {1,2,3,4,5,6,7,500,600}
+q2 = {11,22,33,44,4,5,6,9,500}
+# it will print the unique element of the left set
+q1.difference(q2)
+{1, 2, 3, 7, 600}
+q2.difference(q1)
+{9, 11, 22, 33, 44}
+# it print common elements from both the sets
+q1.intersection(q2)
+{4, 5, 6, 500}
+# print unique elements form both the sets
+q1.symmetric_difference(q2)
+{1, 2, 3, 7, 9, 11, 22, 33, 44, 600}
+q1.union() # add new set in the old set in the end of the old set
+q1.update() # add and save the new set in the old one
+q1.discard()
+q1.remove()
+q1.union(q2)
+{1, 2, 3, 4, 5, 6, 7, 9, 11, 22, 33, 44, 500, 600}
+q1
+{1, 2, 3, 4, 5, 6, 7, 500, 600}
+q1.update(q2)
+q1
+{1, 2, 3, 4, 5, 6, 7, 9, 11, 22, 33, 44, 500, 600}
+Dict
+it is a pair of keys and values
+s = {}
+type(s)
+dict
+d = {"name":["a","b","c"],
+    "age":[22,25,26]}
+d
+{'name': ['a', 'b', 'c'], 'age': [22, 25, 26]}
+d1 = {"name":("a","b","c"),
+     "age":(22,25,26)}
+d1
+{'name': ('a', 'b', 'c'), 'age': (22, 25, 26)}
+# print the keys of the dict
+d.keys()
+dict_keys(['name', 'age'])
+# print the values of the dict
+d.values()
+dict_values([['a', 'b', 'c'], [22, 25, 26]])
+# to print the values of a perticular key
+d["name"]
+['a', 'b', 'c']
+d["name"][0]
+'a'
+d["name"].append("d")
+d["name"]
+['a', 'b', 'c', 'd']
+d
+{'name': ['a', 'b', 'c', 'd'], 'age': [22, 25, 26]}
+w = {"id":[1001,1002,1003,1004,1005],
+    "location":["Delhi","Noida","Jaipur","Pune","Mumbai"],
+    "job":["DS","analyst","HR","Manager"]}
+w
+{'id': [1001, 1002, 1003, 1004, 1005],
+ 'location': ['Delhi', 'Noida', 'Jaipur', 'Pune', 'Mumbai'],
+ 'job': ['DS', 'analyst', 'HR', 'Manager']}
+w["location"][1:3] = ["jammu","kashmir"]
+w["location"]
+['Delhi', 'jammu', 'kashmir', 'Pune', 'Mumbai']
+ 
+ 
+ 
+8426037770
+r = {"ID":[1441,1442,1443,1445],
+    "JOB":["HR","Manager","CA","CS"]}
+r
+{'ID': [1441, 1442, 1443, 1445], 'JOB': ['HR', 'Manager', 'CA', 'CS']}
+r.keys()
+dict_keys(['ID', 'JOB'])
+r.values()
+dict_values([[1441, 1442, 1443, 1445], ['HR', 'Manager', 'CA', 'CS']])
+r["ID"]
+[1441, 1442, 1443, 1445]
+r["JOB"]
+['HR', 'Manager', 'CA', 'CS']
+type(r["ID"])
+list
+# add a value in the key
+# 1. at the end 
+# 2 any perticular index value 
+# 3 replace 
+# 1. at the end
+r["ID"].append(1446)
+r
+{'ID': [1441, 1442, 1443, 1445, 1446], 'JOB': ['HR', 'Manager', 'CA', 'CS']}
+# 2 any perticular index value
+r["ID"].insert(0,1440)
+r
+{'ID': [1440, 1441, 1442, 1443, 1445, 1446],
+ 'JOB': ['HR', 'Manager', 'CA', 'CS']}
+# replace
+r["ID"][0] = 1000
+r
+{'ID': [1000, 1441, 1442, 1443, 1445, 1446],
+ 'JOB': ['HR', 'Manager', 'CA', 'CS']}
+# if we want to delete any values
+# 1 from last
+# 2 any index value
+# value
+# 1 from last
+r["ID"].pop()
+1446
+r
+{'ID': [1000, 1441, 1443, 1445], 'JOB': ['HR', 'Manager', 'CA', 'CS']}
+# 2 any index value
+r["ID"].pop(0)
+1000
+r
+{'ID': [1441, 1443, 1445], 'JOB': ['HR', 'Manager', 'CA', 'CS']}
+r["ID"].remove(1443)
+r
+{'ID': [1441, 1445], 'JOB': ['HR', 'Manager', 'CA', 'CS']}
+r
+{'ID': [1441, 1445], 'JOB': ['HR', 'Manager', 'CA', 'CS']}
+ 
+ 

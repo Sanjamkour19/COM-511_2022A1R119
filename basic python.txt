@@ -1,0 +1,394 @@
+# add
+45+6
+51
+print(45+6)
+51
+print("sum of 2 number like 5 and 6 is",5+6)
+sum of 2 number like 5 and 6 is 11
+print("sum of {} and {} is {}".format(4,8,8+4))
+sum of 4 and 8 is 12
+square root of {} is {}
+cube root
+square
+cube
+print("square of {} is {}".format(45,45**2))
+square of 45 is 2025
+print("cube of {} is {}".format(45,45**3))
+cube of 45 is 91125
+print("square root of {} is {}".format(45,45**(.5)))
+square root of 45 is 6.708203932499369
+round(6.49459836,3)
+6.495
+print("square root of {} is {}".format(45, round(45**(1/2),2  )  )  )
+square root of 45 is 6.71
+print("cube of {} is {}".format(45,45**(1/3)))
+cube of 45 is 3.5568933044900626
+print("{} hours and {} min".format(61//60,61%60))
+1 hours and 1 min
+62%60
+2
+60//60
+1
+a = 155689
+print("{} hours and {} min".format(a//60,a%60))
+2594 hours and 49 min
+print("days")
+print((155689//60)//24)
+days
+108
+print("min",(155689%60))
+min 49
+(155689//60)%24
+2
+print("{} days {} hours and {} min".format((155689//60)//24,(155689//60)%24,(155689%60)))
+108 days 2 hours and 49 min
+50%4
+2
+50//4
+12
+12*4
+48
+185
+185//60
+3
+185%60
+5
+print("{} hours and {} min".format(185//60,185%60))
+3 hours and 5 min
+5 days 2 hours 5 min
+5*24
+120
+120*60
+7200
+7200+120+5
+7325
+7325//60
+122
+# days
+(7325//60)//24
+5
+# hours
+(7325//60)%24
+2
+7325%60
+5
+print("{} days {} hours and {} min".format((7325//60)//24,(7325//60)%24,7325%60))
+5 days 2 hours and 5 min
+a = 1457986
+# min
+1457986//60
+24299
+# sec
+1457986%60
+46
+print("days hours min sec")
+q1_sec = 4785693
+q2_sec = 2578963
+q3_min = 2589630
+q4_min = 12403500
+days hours min sec
+Date 23-08-2024
+variables
+# 1. there is a logical length for variable name
+# 2. name must be starts with _ or text
+# 3. there is no spaces in the variable name 
+# 4. not allow to use reserved keywords 
+camparison operators
+> # greater than
+< # less than
+>= # more than equals to
+<= # less than equals to
+== # equals to
+!= # not equals to
+a = 9
+b = 88
+a >b
+False
+a >= b
+False
+a <b
+True
+a <= b
+True
+a == b
+False
+print(a)
+print(b)
+9
+88
+a = b
+print(a)
+print(b)
+88
+88
+a!=b
+False
+Data Types
+int # it will read only whole numbers 
+float # it will read both whole and decimal numbers 
+str # whatever we mention in '' , " ",""" """ called stirng 
+bool # True (1) and False (0)
+q = 5
+w = 5.5
+e = "hello"
+t = True
+type(q)
+int
+type(w)
+float
+type(e)
+type(t)
+bool
+type(t)
+bool
+print(type(q))
+print(type(w))
+print(type(e))
+print(type(t))
+<class 'int'>
+<class 'float'>
+<class 'str'>
+<class 'bool'>
+%whos
+Variable          Type     Data/Info
+------------------------------------
+a                 int      88
+b                 int      88
+e                 str      hello
+i_am_using_this   int      5896
+int               int      99
+q                 int      5
+t                 bool     True
+w                 float    5.5
+# to delete any variable from the history
+del(a)
+%whos
+Variable          Type     Data/Info
+------------------------------------
+b                 int      88
+e                 str      hello
+i_am_using_this   int      5896
+int               int      99
+q                 int      5
+t                 bool     True
+w                 float    5.5
+a = "123"
+type(a)
+str
+a = float(a)
+type(a)
+float
+h = 45
+str(h)
+'45'
+User Input
+a = 5
+a = input()
+jyfvhbjkhbv 
+a
+'jyfvhbjkhbv '
+w = input()
+12354
+type(w)
+str
+w = int(input())
+8
+type(w)
+int
+w = float(input())
+5.5
+type(w)
+float
+w = input()
+type(w)
+458
+str
+w = int(input())
+type(w)
+5.5
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+Input In [10], in <cell line: 1>()
+----> 1 w = int(input())
+      2 type(w)
+
+ValueError: invalid literal for int() with base 10: '5.5'
+w = float(input())
+type(w)
+45.2
+float
+String
+st = "hello potter meet me at the shop or mail me on python@gmail.com at 9:00 PM"
+len(st)
+74
+up=st.upper()
+up.lower()
+'hello potter meat me at the shop or mail me on python@gmail.com at 9:00 pm'
+st.capitalize()
+'Hello potter meat me at the shop or mail me on python@gmail.com at 9:00 pm'
+st.title()
+'Hello Potter Meat Me At The Shop Or Mail Me On Python@Gmail.Com At 9:00 Pm'
+st.removeprefix("h")
+'ello potter meat me at the shop or mail me on python@gmail.com at 9:00 PM'
+st.removeprefix("hello")
+' potter meat me at the shop or mail me on python@gmail.com at 9:00 PM'
+st.split()
+['hello',
+ 'potter',
+ 'meet',
+ 'me',
+ 'at',
+ 'the',
+ 'shop',
+ 'or',
+ 'mail',
+ 'me',
+ 'on',
+ 'python@gmail.com',
+ 'at',
+ '9:00',
+ 'PM']
+st
+'hello potter meet me at the shop or mail me on python@gmail.com at 9:00 PM'
+st.split("9")
+['hello potter meet me at the shop or mail me on python@gmail.com at ',
+ ':00 PM']
+len(st) # it count the length of the string
+st.upper() # it convert lowercase into uppercase
+st.lower() # it convert uppercase into lowercse
+st.capitalize() # it convert 1st letter of the sentance into upercase 
+st.title() # it convert 1st letter of every word after spaces, delimeter and special char
+st.removeprefix() # it remove the 1st letter from the string
+st.removesuffix() # it will remove last letter or word form the string 
+st.split() # split all the words by spaces or any mentioned word
+st = " hello "
+st.lstrip()
+st.rstrip()
+' hello'
+st.rstrip()
+st.lstrip()
+s= "today is owl"
+s.find("o",2)
+9
+st.find("@")
+53
+st
+'hello potter meet me at the shop or mail me on python@gmail.com at 9:00 PM'
+0 1 2 3 4
+h e l l o
+st.find("m",14)
+18
+0,1,2,3,4
+h,e,l,l,o
+
+a = "hello"
+variable["start":"stop":"step"]
+w = "0123456789"
+w[0:3]
+'012'
+w[0:6]
+'012345'
+w[0:10:2]
+'02468'
+r = "there is a class"
+r[0:10:2]
+'teei '
+r[0:]
+'there is a class'
+w[0::2]
+'02468'
+w
+'0123456789'
+w[-3::-2]
+'7531'
+t.find("people")
+15
+t = "there are many people in the world but i don't know any of them"
+q1 extract "people" from the above string
+q2 extract "know any of" from the above string
+q3 extract "world" from the above string
+q4 extract "are many people in the" from the above string
+t[15:21]
+'people'
+t[47:58]
+'know any of'
+t[29:34]
+'world'
+t[6:28]
+'are many people in the'
+t
+"there are many people in the world but i don't know any of them"
+f = "hello how are you hello i am fine hello"
+f.find("hello",19)
+34
+f.count("hello")
+3
+f.count(" ")
+8
+print("1st the",s.find("the"))
+print("2nd the",s.find("the",3))
+print("3rd the",s.find("the",10))
+1st the 2
+2nd the 9
+3rd the 15
+t.count("a")
+3
+s = "1 the 23 the 3 the"
+s.find("the",10)
+15
+s[15:]
+'the'
+s = "hello harry, please meet me @ coffee shop or email me @ python@gmail.com @11:00 am"
+s.find("com")
+69
+s[56:72].upper()
+'PYTHON@GMAIL.COM'
+r = s[56:72]
+r = r.upper()
+r
+'PYTHON@GMAIL.COM'
+s.replace("python@gmail.com",r)
+'hello harry, please meet me @ coffee shop or email me @ PYTHON@GMAIL.COM @11:00 am'
+s.replace("python@gmail.com",'PYTHON@GMAIL.COM')
+'hello harry, please meet me @ coffee shop or email me @ PYTHON@GMAIL.COM @11:00 am'
+g = "kill"
+r= " him"
+g*5
+'killkillkillkillkill'
+s.split()
+['hello',
+ 'harry,',
+ 'please',
+ 'meet',
+ 'me',
+ '@',
+ 'coffee',
+ 'shop',
+ 'or',
+ 'email',
+ 'me',
+ '@',
+ 'python@gmail.com',
+ '@11:00',
+ 'am']
+d = " robin said to harry that "
+d+s
+' robin said to harry that hello harry, please meet me @ coffee shop or email me @ python@gmail.com @11:00 am'
+s
+'hello harry, please meet me @ coffee shop or email me @ python@gmail.com @11:00 am'
+d = "1 hello how are you"
+d.replace("1","in the starting of text 1")
+'in the starting of text 1 hello how are you'
+s.replace("h", "robin said to harry that h")
+'robin said to harry that hello robin said to harry that harry, please meet me @ coffee srobin said to harry that hop or email me @ pytrobin said to harry that hon@gmail.com @11:00 am'
+s.replace("am","am harry replied ok i'll be there ")
+"hello harry, please meet me @ coffee shop or email me @ python@gmail.com @11:00 am harry replied ok i'll be there "
+e = "0123456789"
+e[::-1]
+'9876543210'
+e[::-1]
+'9876543210'
+e[0::2]
+'02468'
+e[1::2]
+'13579'
